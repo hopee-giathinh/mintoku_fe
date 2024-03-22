@@ -6,4 +6,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --blue-800: #153c4a;
+  --blue-600: #7599a6;
+  --blue-500: #1eade2;
+  --grey-500: #edf1f2;
+}
+
+html,
+body {
+  height: 100% !important;
+  color: #153c4a !important;
 }
