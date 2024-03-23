@@ -32,7 +32,7 @@
 body {
   height: 100vh !important;
   width: 100vw !important;
-  overflow: hidden;
+  overflow-x: hidden;
   color: var(--blue-800) !important;
 }
 
