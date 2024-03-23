@@ -7,17 +7,58 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 :root {
   --blue-800: #153c4a;
   --blue-600: #7599a6;
   --blue-500: #1eade2;
+  --blue-400: #e5eff3;
   --grey-500: #edf1f2;
+
+  --font-bold: 700;
+  --font-regular: 600;
+  --font-semibold: 500;
+  --font-light: 400;
 }
 
-html,
 body {
-  height: 100% !important;
-  color: #153c4a !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  overflow: hidden;
+  color: var(--blue-800) !important;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.font-700 {
+  font-weight: var(--font-bold) !important;
+}
+
+.font-600 {
+  font-weight: var(--font-regular) !important;
+}
+
+.font-500 {
+  font-weight: var(--font-semibold) !important;
+}
+
+.font-400 {
+  font-weight: var(--font-light) !important;
+}
+
+.text-primary {
+  color: var(--blue-800) !important;
+}
+
+.text-second {
+  color: var(--blue-600) !important;
+}
+
+.text-blue {
+  color: var(--blue-500) !important;
 }

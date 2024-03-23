@@ -15,14 +15,13 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <main class="w-full h-full p-6 bg-[#F2FAFF]">
-      <!-- HEADER -->
-      <header class="w-full">
+
+  <body class="w-[100vw] h-[100vh] bg-[#F2FAFE] relative">
+    <main class="w-full h-full p-8">
+      <div class="flex gap-x-8 w-full mt-20">
         <!-- NAV BAR -->
         <nav
-          class="mx-auto flex items-center justify-between p-6"
-          aria-label="Global"
+          class="flex py-4 px-8 items-center justify-between fixed w-full top-0 left-0"
         >
           <div class="flex flex-1">
             <a href="#" class="m-1.5 p-1.5">
@@ -62,71 +61,193 @@
           </button>
         </nav>
 
-        <div class="w-full">
-          <div class="flex items-center justify-between mt-2">
-            <div class="self-end">
-              <h1 class="text-[100px] font-semibold">
-                làm việc
+        <div class="w-[100%]">
+          <!-- HEADER -->
+          <header class="w-full">
+            <div class="w-full">
+              <div class="flex items-center justify-between mt-2">
+                <div class="self-end leading-none">
+                  <h1 class="text-[100px] font-semibold">làm việc</h1>
+                  <h1 class="text-[100px] font-semibold">ở nhật bản</h1>
 
-                <p>ở nhật bản</p>
-              </h1>
-              <!-- <h1 class="text-[100px] font-semibold"></h1> -->
+                  <p
+                    class="text-2xl underline underline-offset-8 mt-5 font-bold"
+                  >
+                    求人探しから自国に戻るまで、日本で働くあなたをサポート。
+                  </p>
+                </div>
+                <div>
+                  <img
+                    class="h-full w-full"
+                    src="/images/header.png"
+                    alt="header"
+                  />
+                </div>
+              </div>
 
-              <p class="text-2xl mt-5 font-bold">
-                求人探しから自国に戻るまで、日本で働くあなたをサポート。
-              </p>
+              <div class="flex items-center justify-between mt-10">
+                <div
+                  class="flex-start text-left self-start max-w-[40%] text-[18px] mt-5 font-400 text-second leading-[27px]"
+                >
+                  <p>
+                    Vietnamese consultants provide support for interview, visa
+                    application, housing arrangement, and Japanese language
+                    training.
+                  </p>
+
+                  <p>No cost Japanese recruitment site for Vietnamese.</p>
+                </div>
+
+                <div>
+                  <div class="flex gap-x-4">
+                    <div
+                      class="text-second self-center text-center bg-white rounded-[10px] shadow-md px-8 py-4"
+                    >
+                      <div class="flex justify-center gap-x-1 text-[12px]">
+                        <div>
+                          <img src="/images/header/carousel_1.svg" alt="" />
+                        </div>
+
+                        <h1>Số lượng việc làm đã đăng</h1>
+                      </div>
+                      <h1 class="text-primary font-700">
+                        Hơn <span class="text-[27px]"> 1,000 </span> mặt hàng
+                      </h1>
+                    </div>
+
+                    <div
+                      class="text-second self-center text-center bg-white rounded-[10px] shadow-md px-8 py-4"
+                    >
+                      <div class="flex justify-center gap-x-1 text-[12px]">
+                        <img src="/images/header/carousel_3.svg" alt="" />
+                        <h1>サポート数</h1>
+                      </div>
+                      <h1 class="text-primary font-700">
+                        Hơn <span class="text-[27px]"> 1,000 </span> mặt hàng
+                      </h1>
+                    </div>
+
+                    <div
+                      class="flex gap-x-2 text-second items-center text-start bg-white rounded-[10px] shadow-md px-8 py-4"
+                    >
+                      <div>
+                        <img
+                          class="block"
+                          src="/images/header/carousel_2.png"
+                          alt=""
+                        />
+                      </div>
+
+                      <div>
+                        <h1 class="text-primary font-700">超人気！</h1>
+                        <h1 class="text-primary font-700">募集限定求人</h1>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a class="text-[13px] text-end font-400 underline text-blue"
+                    >What is about mintoku?</a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="">
-              <img
-                class="h-full w-full"
-                src="/images/header.png"
-                alt="header"
-              />
+          </header>
+
+          <!-- LEFT SIDEBAR -->
+          <div class="flex gap-x-12 mt-8">
+            <aside class="w-[240px]">
+              <div class="flex p-1 rounded-md bg-[#F0F5F7]">
+                <button
+                  class="w-[50%] bg-white rounded-md shadow-md text-primary font-700 p-2"
+                >
+                  検索
+                </button>
+
+                <button class="w-[50%] rounded-md text-primary font-700 p-2">
+                  検索履歴
+                </button>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div class="flex gap-x-3 text-primary font-500 py-6">
+                  <img src="/images/aside/aside_1.svg" alt="" />
+                  <h1>国籍を選ぶ</h1>
+                </div>
+
+                <h1 class="text-blue font-700">4</h1>
+              </div>
+
+              <hr />
+
+              <div class="flex items-center justify-between">
+                <div class="flex gap-x-3 text-primary font-500 py-6">
+                  <img src="/images/aside/aside_2.svg" alt="" />
+                  <h1>産業から選ぶ</h1>
+                </div>
+
+                <h1 class="text-blue font-700">4</h1>
+              </div>
+
+              <hr />
+
+              <div class="flex items-center justify-between">
+                <div class="flex gap-x-3 text-primary font-500 py-6">
+                  <img src="/images/aside/aside_3.svg" alt="" />
+                  <h1>技人国から選ぶ</h1>
+                </div>
+
+                <h1 class="text-blue font-700">4</h1>
+              </div>
+
+              <hr />
+
+              <div class="flex items-center justify-between bg-white px-4">
+                <div class="flex gap-x-3 text-primary font-500 py-6">
+                  <img src="/images/aside/aside_4.svg" alt="" />
+                  <h1>場所から選ぶ</h1>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="flex items-center justify-between">
+                <div class="flex gap-x-3 text-primary font-500 py-6">
+                  <img src="/images/aside/aside_4.svg" alt="" />
+                  <h1>123</h1>
+                </div>
+              </div>
+            </aside>
+
+            <div class="w-full">
+              <div class="flex gap-x-6">
+                <button
+                  class="text-primary font-700 px-6 py-2 border-2 border-transparent border-b-[#1EADE2]"
+                >
+                  新着求人
+                </button>
+                <button class="text-second font-700 px-6 py-3">
+                  採用される確立が高い求人
+                </button>
+              </div>
             </div>
           </div>
 
-          <div class="flex items-center justify-between mt-10">
-            <div
-              class="flex-start text-left max-w-[40%] text-[#7599A6] text-xl mt-5"
-            >
-              <p>
-                Vietnamese consultants provide support for interview, visa
-                application, housing arrangement, and Japanese language
-                training.
-              </p>
+          <br />
+          <br />
 
-              <p>No cost Japanese recruitment site for Vietnamese.</p>
-            </div>
+          <br />
+          <br />
+        </div>
 
-            <div class="flex gap-x-4">
-              <div
-                class="max-w-[220px] text-center bg-white rounded-[10px] shadow-md p-3"
-              >
-                <div class="text-[#7599A6]">Số lượng việc làm đã đăng</div>
-                <p class="font-semibold">
-                  Hơn <span class="text-2xl"> 1,000 </span> mặt hàng
-                </p>
-              </div>
-
-              <div
-                class="text-center bg-white rounded-[10px] shadow-sm p-4 py-4 px-8"
-              >
-                <div class="text-[#7599A6]">サポート数</div>
-                <p class="font-semibold">
-                  人以上 <span class="text-2xl"> 4,000 </span>
-                </p>
-              </div>
-
-              <div class="text-center bg-white rounded-[10px] shadow-md p-4">
-                <div class="text-[#7599A6]">Số lượng việc làm đã đăng</div>
-                <p class="font-semibold">
-                  Hơn <span class="text-2xl"> 1,000 </span> mặt hàng
-                </p>
-              </div>
-            </div>
+        <div>
+          <div class="bg-[#343069] rounded-md text-white p-5">
+            <h1>
+              全国169拠点以上。 人材サポートアジア最大のCAMCOM
+              GROUPが運営しております。
+            </h1>
           </div>
         </div>
-      </header>
+      </div>
     </main>
   </body>
 </html>
