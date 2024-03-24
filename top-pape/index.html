@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mintoku top page</title>
+    <title>Mintoku</title>
 
     <link href="/main.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,13 +16,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="w-[100vw] h-[100vh] bg-[#F2FAFE] relative">
+  <body class="bg-[#F2FAFE]">
     <nav
       class="flex py-4 px-8 items-center justify-between w-full top-0 left-0"
     >
       <div class="flex flex-1">
         <a href="#" class="m-1.5 p-1.5">
-          <img class="h-8 w-full" src="./../images/logo.svg" alt="logo" />
+          <img class="h-8 w-full" src="./../images/logo.png" alt="logo" />
         </a>
 
         <div class="flex ml-6 items-center gap-x-12">
@@ -50,7 +50,7 @@
         "
       >
         <div
-          class="flex items-center justify-end bg-[#153C4A] text-white rounded-[5px] text-sm font-semibold px-8 py-4"
+          class="flex items-center justify-end bg-[#153C4A] text-white rounded-[5px] text-sm font-semibold px-12 py-4"
         >
           <img class="h-3 w-3 mr-2" src="./../images/user.svg" alt="logo" />
           <span>Sign up</span>
@@ -58,7 +58,7 @@
       </div>
 
       <button
-        class="flex items-center justify-end bg-white rounded-md text-[#153C4A] text-sm font-semibold p-4 ml-2"
+        class="flex items-center justify-end bg-white rounded-md text-[#153C4A] text-sm font-semibold px-8 py-4 ml-2"
       >
         <img class="h-4 w-4 mr-2" src="./../images/national.svg" alt="logo" />
         <span>EN</span>
@@ -66,14 +66,14 @@
       </button>
     </nav>
 
-    <main class="w-full h-full p-8">
-      <div class="flex gap-x-8 w-full">
+    <main class="p-8 rounded-bl-[20px] rounded-br-[20px]">
+      <div class="flex gap-x-8">
         <!-- NAV BAR -->
 
         <!--END NAV BAR -->
 
         <!-- MAIN -->
-        <div class="w-[calc(100%-310px)]">
+        <div class="w-[calc(100%-310px)] h-full">
           <!-- HEADER -->
           <header
             class="w-full py-10"
@@ -139,7 +139,7 @@
                 <div>
                   <div class="flex gap-x-4">
                     <div
-                      class="min-w-[210px] text-second self-center text-center bg-white rounded-[10px] shadow-md p-4"
+                      class="min-w-[210px] text-second self-center text-center bg-white rounded-[10px] shadow-md hover:shadow-lg transition ease-in-out p-4 cursor-pointer"
                     >
                       <div class="flex justify-center gap-x-1 text-[12px]">
                         <div>
@@ -158,7 +158,7 @@
                     </div>
 
                     <div
-                      class="min-w-[210px] text-second self-center text-center bg-white rounded-[10px] shadow-md p-4"
+                      class="min-w-[210px] text-second self-center text-center bg-white rounded-[10px] shadow-md hover:shadow-lg transition ease-in-out p-4 cursor-pointer"
                     >
                       <div class="flex justify-center gap-x-1 text-[12px]">
                         <img src="/images/header/carousel_3.svg" alt="" />
@@ -170,7 +170,7 @@
                     </div>
 
                     <div
-                      class="min-w-[210px] w-full flex gap-x-2 text-second items-center text-start bg-white rounded-[10px] shadow-md p-4"
+                      class="min-w-[210px] w-full flex gap-x-2 text-second items-center text-start bg-white rounded-[10px] shadow-md hover:shadow-lg transition ease-in-out p-4 cursor-pointer"
                     >
                       <div>
                         <img
@@ -187,9 +187,11 @@
                     </div>
                   </div>
 
-                  <a class="text-[13px] text-end font-400 underline text-blue"
-                    >What is about mintoku?</a
+                  <h1
+                    class="text-[13px] text-end font-400 underline text-blue mt-2 self-end"
                   >
+                    What is about mintoku?
+                  </h1>
                 </div>
               </div>
             </div>
@@ -259,10 +261,66 @@
 
               <hr />
 
-              <div class="flex items-center justify-between">
-                <div class="flex gap-x-3 text-primary font-500 py-6">
-                  <img src="/images/aside/aside_4.svg" alt="" />
-                  <h1>123</h1>
+              <div
+                class="flex flex-col gap-y-6 pr-8 mt-6 text-primary font-500"
+              >
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-x-2">
+                    <h1>給料</h1>
+                    <h1 class="text-blue font-700">2</h1>
+                  </div>
+
+                  <h1>日本語レベル</h1>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <h1>勤務時間</h1>
+
+                  <h1>住居</h1>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <h1>環境・待遇</h1>
+                </div>
+              </div>
+
+              <div class="flex bg-white p-2 rounded-[10px] font-700 mt-6">
+                <div
+                  class="flex items-center text-white text-[16px] bg-[#153C4A] px-6 py-4 rounded-[10px] gap-x-2"
+                >
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.57633 8.6761H8.03431L7.8422 8.47541C8.51458 7.62807 8.91938 6.52802 8.91938 5.33133C8.91938 2.66295 6.92281 0.5 4.45969 0.5C1.99657 0.5 0 2.66295 0 5.33133C0 7.99971 1.99657 10.1627 4.45969 10.1627C5.56432 10.1627 6.57976 9.72413 7.36192 8.99571L7.54717 9.20383V9.79102L10.9777 13.5L12 12.3925L8.57633 8.6761ZM4.45969 8.6761C2.75129 8.6761 1.37221 7.1821 1.37221 5.33133C1.37221 3.48056 2.75129 1.98656 4.45969 1.98656C6.1681 1.98656 7.54717 3.48056 7.54717 5.33133C7.54717 7.1821 6.1681 8.6761 4.45969 8.6761Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <h1>SEARCH</h1>
+                </div>
+
+                <div
+                  class="flex flex-col justify-center items-center text-second w-full"
+                >
+                  <svg
+                    width="16"
+                    height="19"
+                    viewBox="0 0 16 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 18.45C4.98333 18.2 3.3125 17.3208 1.9875 15.8125C0.6625 14.3042 0 12.5333 0 10.5C0 9.4 0.216667 8.34583 0.65 7.3375C1.08333 6.32917 1.7 5.45 2.5 4.7L3.925 6.125C3.29167 6.69167 2.8125 7.35 2.4875 8.1C2.1625 8.85 2 9.65 2 10.5C2 11.9667 2.46667 13.2625 3.4 14.3875C4.33333 15.5125 5.53333 16.2 7 16.45V18.45ZM9 18.45V16.45C10.45 16.1833 11.6458 15.4917 12.5875 14.375C13.5292 13.2583 14 11.9667 14 10.5C14 8.83333 13.4167 7.41667 12.25 6.25C11.0833 5.08333 9.66667 4.5 8 4.5H7.925L9.025 5.6L7.625 7L4.125 3.5L7.625 0L9.025 1.4L7.925 2.5H8C10.2333 2.5 12.125 3.275 13.675 4.825C15.225 6.375 16 8.26667 16 10.5C16 12.5167 15.3375 14.2792 14.0125 15.7875C12.6875 17.2958 11.0167 18.1833 9 18.45Z"
+                      fill="#7599A6"
+                    />
+                  </svg>
+
+                  <h1>Reset</h1>
                 </div>
               </div>
             </aside>
@@ -333,10 +391,13 @@
                             <p class="h-[17px]">介護職</p>
                           </button>
                         </div>
-                        <p class="text-[27px] font-bold ml-1 cursor-pointer">
+                        <a
+                          href="/jobs-page/index.html"
+                          class="text-[27px] font-bold ml-1 cursor-pointer"
+                        >
                           Industri Farmasi, Bahan Makanan, Bahan Kimia, Bahan
                           Baku
-                        </p>
+                        </a>
                         <div class="flex gap-1 items-baseline mt-[6px]">
                           <svg
                             width="24"
@@ -502,10 +563,13 @@
                             <p class="h-[17px]">介護職</p>
                           </button>
                         </div>
-                        <p class="text-[27px] font-bold ml-1 cursor-pointer">
+                        <a
+                          href="/jobs-page/index.html"
+                          class="text-[27px] font-bold ml-1 cursor-pointer"
+                        >
                           Industri Farmasi, Bahan Makanan, Bahan Kimia, Bahan
                           Baku
-                        </p>
+                        </a>
                         <div class="flex gap-1 items-baseline mt-[6px]">
                           <svg
                             width="24"
@@ -671,10 +735,13 @@
                             <p class="h-[17px] font-bold">介護職</p>
                           </button>
                         </div>
-                        <p class="text-[27px] font-bold ml-1 cursor-pointer">
+                        <a
+                          href="/jobs-page/index.html"
+                          class="text-[27px] font-bold ml-1 cursor-pointer"
+                        >
                           Industri Farmasi, Bahan Makanan, Bahan Kimia, Bahan
                           Baku
-                        </p>
+                        </a>
                         <div class="flex gap-1 items-baseline mt-[6px]">
                           <svg
                             width="24"
@@ -840,10 +907,13 @@
                             <p class="h-[17px]">介護職</p>
                           </button>
                         </div>
-                        <p class="text-[27px] font-bold ml-1 cursor-pointer">
+                        <a
+                          href="/jobs-page/index.html"
+                          class="text-[27px] font-bold ml-1 cursor-pointer"
+                        >
                           Industri Farmasi, Bahan Makanan, Bahan Kimia, Bahan
                           Baku
-                        </p>
+                        </a>
                         <div class="flex gap-1 items-baseline mt-[6px]">
                           <svg
                             width="24"
@@ -1009,10 +1079,13 @@
                             <p class="h-[17px]">介護職</p>
                           </button>
                         </div>
-                        <p class="text-[27px] font-bold ml-1 cursor-pointer">
+                        <a
+                          href="/jobs-page/index.html"
+                          class="text-[27px] font-bold ml-1 cursor-pointer"
+                        >
                           Industri Farmasi, Bahan Makanan, Bahan Kimia, Bahan
                           Baku
-                        </p>
+                        </a>
                         <div class="flex gap-1 items-baseline mt-[6px]">
                           <svg
                             width="24"
@@ -1178,10 +1251,13 @@
                             <p class="h-[17px]">介護職</p>
                           </button>
                         </div>
-                        <p class="text-[27px] font-bold ml-1 cursor-pointer">
+                        <a
+                          href="/jobs-page/index.html"
+                          class="text-[27px] font-bold ml-1 cursor-pointer"
+                        >
                           Industri Farmasi, Bahan Makanan, Bahan Kimia, Bahan
                           Baku
-                        </p>
+                        </a>
                         <div class="flex gap-1 items-baseline mt-[6px]">
                           <svg
                             width="24"
@@ -1347,10 +1423,13 @@
                             <p class="h-[17px]">介護職</p>
                           </button>
                         </div>
-                        <p class="text-[27px] font-bold ml-1 cursor-pointer">
+                        <a
+                          href="/jobs-page/index.html"
+                          class="text-[27px] font-bold ml-1 cursor-pointer"
+                        >
                           Industri Farmasi, Bahan Makanan, Bahan Kimia, Bahan
                           Baku
-                        </p>
+                        </a>
                         <div class="flex gap-1 items-baseline mt-[6px]">
                           <svg
                             width="24"
@@ -2472,7 +2551,7 @@
                   </div>
                 </div>
               </div>
-              <div class="flex flex-col gap-4 pb-[135px]">
+              <div class="flex flex-col gap-4">
                 <div class="flex items-center gap-4">
                   <svg
                     width="16"
@@ -3058,6 +3137,101 @@
             />
           </div>
 
+          <div
+            class="flex gap-x-4 justify-center items-center mt-10 mb-20 text-primary"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="#153C4A"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0222 0C4.37581 0 0 4.12682 0 9.7009C0 12.6164 1.19798 15.1359 3.14798 16.8763C3.48468 17.1791 3.41532 17.3545 3.47258 19.2244C3.47709 19.3553 3.51357 19.4832 3.57885 19.5969C3.64413 19.7105 3.73622 19.8064 3.84708 19.8763C3.95795 19.9462 4.08423 19.9879 4.2149 19.9977C4.34558 20.0076 4.47668 19.9853 4.59677 19.9329C6.73024 18.9933 6.75766 18.9191 7.11935 19.0175C13.3004 20.7188 20 16.763 20 9.7009C20 4.12682 15.669 0 10.0222 0ZM16.0399 7.4653L13.0964 12.1256C12.9852 12.3009 12.8391 12.4513 12.6671 12.5674C12.4951 12.6835 12.301 12.7628 12.0969 12.8004C11.8928 12.838 11.6832 12.8331 11.4811 12.7858C11.279 12.7386 11.0889 12.6502 10.9226 12.526L8.58064 10.7731C8.47595 10.6946 8.34861 10.6522 8.21774 10.6522C8.08687 10.6522 7.95953 10.6946 7.85484 10.7731L4.69476 13.17C4.27298 13.4898 3.72056 12.9845 4.00484 12.5381L6.94839 7.87782C7.0595 7.70253 7.20563 7.55209 7.37762 7.43594C7.54961 7.31979 7.74374 7.24042 7.94783 7.20283C8.15193 7.16523 8.3616 7.17021 8.56368 7.21746C8.76576 7.26471 8.9559 7.35321 9.12218 7.4774L11.4633 9.22991C11.568 9.30843 11.6953 9.35088 11.8262 9.35088C11.9571 9.35088 12.0844 9.30843 12.1891 9.22991L15.3508 6.83543C15.7718 6.51364 16.3242 7.0185 16.0399 7.4653Z"
+                fill="#153C4A"
+              />
+            </svg>
+
+            <svg
+              width="19"
+              height="20"
+              viewBox="0 0 19 20"
+              fill="#153C4A"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.1542 2.90625C14.3772 1.03125 12.0107 0 9.49576 0C4.30469 0 0.0805804 4.44643 0.0805804 9.91071C0.0805804 11.6562 0.51317 13.3616 1.33594 14.8661L0 20L4.99174 18.6205C6.36585 19.4107 7.91384 19.8259 9.49152 19.8259H9.49576C14.6826 19.8259 19 15.3795 19 9.91518C19 7.26786 17.9312 4.78125 16.1542 2.90625ZM9.49576 18.1563C8.08772 18.1563 6.70937 17.7589 5.50915 17.0089L5.225 16.8304L2.26473 17.6473L3.05357 14.6071L2.86696 14.2946C2.08237 12.9821 1.67098 11.4688 1.67098 9.91071C1.67098 5.37054 5.18259 1.67411 9.5 1.67411C11.5908 1.67411 13.5545 2.53125 15.0304 4.08929C16.5062 5.64732 17.4138 7.71429 17.4096 9.91518C17.4096 14.4598 13.8089 18.1563 9.49576 18.1563ZM13.7877 11.9866C13.5545 11.8616 12.3967 11.2634 12.1804 11.183C11.9641 11.0982 11.8071 11.058 11.6502 11.308C11.4933 11.558 11.0437 12.1116 10.9038 12.2813C10.7681 12.4464 10.6281 12.4688 10.3949 12.3438C9.01228 11.6161 8.10469 11.0446 7.19286 9.39732C6.95112 8.95982 7.4346 8.99107 7.88415 8.04464C7.96049 7.87946 7.92232 7.73661 7.86295 7.61161C7.80357 7.48661 7.33281 6.26786 7.13772 5.77232C6.94688 5.29018 6.75179 5.35714 6.60759 5.34821C6.47187 5.33929 6.31495 5.33929 6.15804 5.33929C6.00112 5.33929 5.74665 5.40179 5.53036 5.64732C5.31406 5.89732 4.70759 6.49554 4.70759 7.71429C4.70759 8.93304 5.55156 10.1116 5.66607 10.2768C5.78482 10.442 7.32433 12.942 9.68661 14.0179C11.1795 14.6964 11.7647 14.7545 12.5112 14.6384C12.965 14.567 13.9022 14.0402 14.0973 13.4598C14.2924 12.8795 14.2924 12.3839 14.233 12.2813C14.1779 12.1696 14.021 12.1071 13.7877 11.9866Z"
+                fill="#153C4A"
+              />
+            </svg>
+
+            <svg
+              width="21"
+              height="15"
+              viewBox="0 0 21 15"
+              fill="#153C4A"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.5612 2.34699C20.3197 1.42316 19.6081 0.695586 18.7046 0.448672C17.0669 0 10.5 0 10.5 0C10.5 0 3.93315 0 2.29544 0.448672C1.39193 0.695625 0.680333 1.42316 0.438815 2.34699C0 4.02148 0 7.51516 0 7.51516C0 7.51516 0 11.0088 0.438815 12.6833C0.680333 13.6071 1.39193 14.3044 2.29544 14.5513C3.93315 15 10.5 15 10.5 15C10.5 15 17.0668 15 18.7046 14.5513C19.6081 14.3044 20.3197 13.6071 20.5612 12.6833C21 11.0088 21 7.51516 21 7.51516C21 7.51516 21 4.02148 20.5612 2.34699ZM8.35226 10.6871V4.34316L13.8409 7.51523L8.35226 10.6871Z"
+                fill="#153C4A"
+              />
+            </svg>
+
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="#153C4A"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 9.05477C18 4.05274 13.9718 0 9 0C4.02823 0 0 4.05274 0 9.05477C0 13.5741 3.29117 17.3202 7.59375 18V11.6723H5.30746V9.05477H7.59375V7.0598C7.59375 4.79063 8.93649 3.5372 10.9931 3.5372C11.978 3.5372 13.0079 3.71391 13.0079 3.71391V5.9411H11.8727C10.755 5.9411 10.4062 6.63919 10.4062 7.35517V9.05477H12.9023L12.5031 11.6723H10.4062V18C14.7088 17.3202 18 13.5741 18 9.05477Z"
+                fill="#153C4A"
+              />
+            </svg>
+
+            <svg
+              width="21"
+              height="18"
+              viewBox="0 0 21 18"
+              fill="#153C4A"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.8414 4.48592C18.8548 4.68279 18.8548 4.87969 18.8548 5.07656C18.8548 11.0812 14.5242 18 6.60916 18C4.17069 18 1.90547 17.2547 0 15.961C0.34646 16.0031 0.67955 16.0172 1.03934 16.0172C3.05137 16.0172 4.90356 15.3 6.38263 14.0766C4.49049 14.0344 2.90482 12.7266 2.35849 10.9266C2.62501 10.9687 2.89149 10.9969 3.17134 10.9969C3.55775 10.9969 3.9442 10.9406 4.30395 10.8422C2.33187 10.4203 0.852759 8.59218 0.852759 6.38437V6.32814C1.42571 6.66564 2.09201 6.87657 2.79818 6.90467C1.63891 6.08902 0.879419 4.69685 0.879419 3.12184C0.879419 2.27811 1.09258 1.50467 1.4657 0.829666C3.58437 3.58591 6.76904 5.38588 10.3401 5.58279C10.2735 5.24529 10.2335 4.89376 10.2335 4.54219C10.2335 2.03904 12.1523 0 14.5374 0C15.7766 0 16.8959 0.548436 17.6821 1.43437C18.6548 1.23751 19.5875 0.857802 20.4137 0.337502C20.0939 1.39221 19.4143 2.27815 18.5216 2.84061C19.3877 2.74222 20.2272 2.48904 21 2.13752C20.4138 3.03748 19.6809 3.83901 18.8414 4.48592Z"
+                fill="#153C4A"
+              />
+            </svg>
+
+            <svg
+              width="19"
+              height="18"
+              viewBox="0 0 19 18"
+              fill="#153C4A"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.50212 4.38503C6.8063 4.38503 4.63185 6.4455 4.63185 9C4.63185 11.5545 6.8063 13.615 9.50212 13.615C12.1979 13.615 14.3724 11.5545 14.3724 9C14.3724 6.4455 12.1979 4.38503 9.50212 4.38503ZM9.50212 12.0003C7.76001 12.0003 6.33581 10.6548 6.33581 9C6.33581 7.3452 7.75577 5.99967 9.50212 5.99967C11.2485 5.99967 12.6684 7.3452 12.6684 9C12.6684 10.6548 11.2442 12.0003 9.50212 12.0003ZM15.7076 4.19625C15.7076 4.79471 15.1989 5.27268 14.5716 5.27268C13.94 5.27268 13.4356 4.79069 13.4356 4.19625C13.4356 3.60181 13.9443 3.11983 14.5716 3.11983C15.1989 3.11983 15.7076 3.60181 15.7076 4.19625ZM18.9332 5.28874C18.8612 3.84681 18.5136 2.56956 17.3988 1.51724C16.2883 0.464911 14.9404 0.135557 13.4187 0.0632601C11.8504 -0.0210867 7.14964 -0.0210867 5.58132 0.0632601C4.06386 0.131541 2.71595 0.460895 1.60117 1.51322C0.486392 2.56555 0.143056 3.8428 0.0667596 5.28473C-0.0222532 6.77084 -0.0222532 11.2251 0.0667596 12.7113C0.138818 14.1532 0.486392 15.4304 1.60117 16.4828C2.71595 17.5351 4.05962 17.8644 5.58132 17.9367C7.14964 18.0211 11.8504 18.0211 13.4187 17.9367C14.9404 17.8685 16.2883 17.5391 17.3988 16.4828C18.5094 15.4304 18.8569 14.1532 18.9332 12.7113C19.0223 11.2251 19.0223 6.77485 18.9332 5.28874ZM16.9071 14.3058C16.5765 15.093 15.9365 15.6995 15.1015 16.0168C13.851 16.4868 10.8839 16.3783 9.50212 16.3783C8.1203 16.3783 5.14897 16.4828 3.90279 16.0168C3.072 15.7036 2.43196 15.0971 2.0971 14.3058C1.60117 13.1209 1.71562 10.3094 1.71562 9C1.71562 7.69062 1.60541 4.87504 2.0971 3.69419C2.42772 2.90695 3.06776 2.30046 3.90279 1.98315C5.15321 1.51322 8.1203 1.62167 9.50212 1.62167C10.8839 1.62167 13.8553 1.51724 15.1015 1.98315C15.9322 2.29644 16.5723 2.90293 16.9071 3.69419C17.4031 4.87906 17.2886 7.69062 17.2886 9C17.2886 10.3094 17.4031 13.125 16.9071 14.3058Z"
+                fill="#153C4A"
+              />
+            </svg>
+
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="#153C4A"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 0C1.35503 0 0 1.35503 0 3V15C0 16.645 1.35503 18 3 18H15C16.645 18 18 16.645 18 15V3C18 1.35503 16.645 0 15 0H3ZM3 2H15C15.565 2 16 2.43497 16 3V15C16 15.565 15.565 16 15 16H3C2.43497 16 2 15.565 2 15V3C2 2.43497 2.43497 2 3 2ZM9 4V11C9 11.565 8.56503 12 8 12C7.43497 12 7 11.565 7 11C7 10.435 7.43497 10 8 10V8C6.35503 8 5 9.35503 5 11C5 12.645 6.35503 14 8 14C9.64497 14 11 12.645 11 11V7.23242C11.6161 7.67134 12.2591 8 13 8V6C12.9527 6 12.2627 5.78094 11.7812 5.36133C11.2998 4.94172 11 4.41499 11 4H9Z"
+                fill="#153C4A"
+              />
+            </svg>
+          </div>
+
           <div class="mt-8">
             <div class="flex items-center gap-4">
               <svg
@@ -3077,7 +3251,123 @@
               <p class="text-primary font-700 text-[18px]">新しい口コミ</p>
             </div>
 
-            <div class="relative">
+            <div>
+              <div class="mt-4 relative">
+                <div
+                  class="bg-white text-[14px] p-6 font-700 rounded-[10px] shadow-md"
+                >
+                  <h1 class="text-[14px] text-second font-400 mb-2">
+                    日常生活
+                  </h1>
+
+                  <h1>
+                    かなり田舎だけどとても綺麗で個人的には気に入っている。コンビニがないのが残念...
+                  </h1>
+                </div>
+
+                <svg
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute h-10 w-10 bottom-[-10px] right-[-15px]"
+                >
+                  <path
+                    d="M14.5 29C22.5081 29 29 22.5081 29 14.5C29 6.49187 22.5081 0 14.5 0C6.49187 0 0 6.49187 0 14.5C0 22.5081 6.49187 29 14.5 29Z"
+                    fill="#D80027"
+                  />
+                  <path
+                    d="M14.4999 7.56519L16.0647 12.3813H21.1287L17.0318 15.3577L18.5967 20.1739L14.4999 17.1974L10.403 20.1739L11.9679 15.3577L7.87109 12.3813H12.935L14.4999 7.56519Z"
+                    fill="#FFDA44"
+                  />
+                </svg>
+              </div>
+
+              <div class="mt-4 relative">
+                <div
+                  class="bg-white text-[14px] p-6 font-700 rounded-[10px] shadow-md"
+                >
+                  <h1 class="text-[14px] text-second font-400 mb-2">
+                    職場での日本語
+                  </h1>
+
+                  <h1>
+                    かなり厳しい。それに日本語が難しいので思ったように上手くできない...
+                  </h1>
+                </div>
+
+                <svg
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute h-10 w-10 bottom-[-10px] right-[-15px]"
+                >
+                  <path
+                    d="M14.5 29C22.5081 29 29 22.5081 29 14.5C29 6.49187 22.5081 0 14.5 0C6.49187 0 0 6.49187 0 14.5C0 22.5081 6.49187 29 14.5 29Z"
+                    fill="#D80027"
+                  />
+                  <path
+                    d="M14.4999 7.56519L16.0647 12.3813H21.1287L17.0318 15.3577L18.5967 20.1739L14.4999 17.1974L10.403 20.1739L11.9679 15.3577L7.87109 12.3813H12.935L14.4999 7.56519Z"
+                    fill="#FFDA44"
+                  />
+                </svg>
+              </div>
+
+              <div class="mt-4 relative">
+                <div
+                  class="bg-white text-[14px] p-6 font-700 rounded-[10px] shadow-md"
+                >
+                  <h1 class="text-[14px] text-second font-400 mb-2">食事</h1>
+
+                  <h1>
+                    自分で料理を作ればかなり抑えられる。ベトナムの材料は手に入らないけど、調味料...
+                  </h1>
+                </div>
+
+                <svg
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute h-10 w-10 bottom-[-10px] right-[-15px]"
+                >
+                  <path
+                    d="M14.5 29C22.5081 29 29 22.5081 29 14.5C29 6.49187 22.5081 0 14.5 0C6.49187 0 0 6.49187 0 14.5C0 22.5081 6.49187 29 14.5 29Z"
+                    fill="#D80027"
+                  />
+                  <path
+                    d="M14.4999 7.56519L16.0647 12.3813H21.1287L17.0318 15.3577L18.5967 20.1739L14.4999 17.1974L10.403 20.1739L11.9679 15.3577L7.87109 12.3813H12.935L14.4999 7.56519Z"
+                    fill="#FFDA44"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="mt-10">
+              <div
+                class="bg-[#153c4a] text-start self-center rounded-[10px] p-8"
+              >
+                <h1 class="text-white font-700">バナー</h1>
+              </div>
+
+              <div
+                class="bg-[#153c4a] text-start self-center rounded-[10px] p-8 mt-4"
+              >
+                <h1 class="text-white font-700">バナー</h1>
+              </div>
+
+              <div
+                class="bg-[#153c4a] text-start self-center rounded-[10px] p-8 mt-4"
+              >
+                <h1 class="text-white font-700">バナー</h1>
+              </div>
+            </div>
+
+            <!-- <div class="relative">
               <div class="mt-4 ml-4">
                 <div
                   class="bg-white text-[13px] pl-8 pr-4 py-4 font-700 rounded-[10px] shadow-md"
@@ -3229,12 +3519,278 @@
                 <path
                   d="M14.4999 7.56519L16.0647 12.3813H21.1287L17.0318 15.3577L18.5967 20.1739L14.4999 17.1974L10.403 20.1739L11.9679 15.3577L7.87109 12.3813H12.935L14.4999 7.56519Z"
                   fill="#FFDA44"
+                />
+              </svg>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="w-full p-10 text-white text-center text-[16px]"
+      style="
+        background-image: url('/images/footer/footer.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <div class="px-[230px]">
+        <div
+          class="flex justify-between items-start text-start leading-[30px] pt-20 pb-20"
+        >
+          <div>
+            <h1 class="text-xl mb-4 font-700">求人情報</h1>
+            <ul>
+              <li>求人一覧</li>
+              <li>求人検索</li>
+              <li>求人タグ一覧</li>
+              <li>コンサルタントに相談する</li>
+            </ul>
+          </div>
+
+          <div>
+            <h1 class="text-xl mb-4 font-700">ライフサポート</h1>
+            <ul>
+              <li>新着記事一覧</li>
+              <li>カテゴリー一覧</li>
+              <li>特集一覧</li>
+            </ul>
+          </div>
+
+          <div>
+            <h1 class="text-xl mb-4 font-700">運営会社について</h1>
+            <ul>
+              <li>会社概要</li>
+              <li>CAMTECH</li>
+              <li>お問い合わせ</li>
+              <li>特定技能制度とは？</li>
+            </ul>
+          </div>
+
+          <div class="self-center">
+            <ul>
+              <li>vietnam CAMCOM</li>
+              <li>掲載をお考えの法人様へ</li>
+              <li>法人様お問い合わせ</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="opacity-50" />
+
+        <div class="text-start leading-[30px] pt-20 pb-10">
+          <div class="flex gap-x-20 items-center mb-12">
+            <svg
+              width="212"
+              height="27"
+              viewBox="0 0 212 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect width="212" height="27" fill="url(#pattern0)" />
+              <defs>
+                <pattern
+                  id="pattern0"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_171_3933"
+                    transform="matrix(0.00159198 0 0 0.0125 -0.000678066 0)"
+                  />
+                </pattern>
+                <image
+                  id="image0_171_3933"
+                  width="629"
+                  height="80"
+                  xlink:href="data:image/png;base64,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"
+                />
+              </defs>
+            </svg>
+
+            <h1 class="text-[14px]">
+              mintoku
+              work(みんとくワーク)は、特定技能外国人に特化した求人・求職ナビサイトです。
+            </h1>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <div class="flex text-[14px] gap-x-6 items-center">
+              <div class="flex gap-x-2 items-center">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_171_3938"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="24"
+                    height="24"
+                  >
+                    <rect width="24" height="24" fill="#FAFDFE" />
+                  </mask>
+                  <g mask="url(#mask0_171_3938)">
+                    <path
+                      d="M5.85 17.1C6.7 16.45 7.65 15.9375 8.7 15.5625C9.75 15.1875 10.85 15 12 15C13.15 15 14.25 15.1875 15.3 15.5625C16.35 15.9375 17.3 16.45 18.15 17.1C18.7333 16.4167 19.1875 15.6417 19.5125 14.775C19.8375 13.9083 20 12.9833 20 12C20 9.78333 19.2208 7.89583 17.6625 6.3375C16.1042 4.77917 14.2167 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 12.9833 4.1625 13.9083 4.4875 14.775C4.8125 15.6417 5.26667 16.4167 5.85 17.1ZM12 13C11.0167 13 10.1875 12.6625 9.5125 11.9875C8.8375 11.3125 8.5 10.4833 8.5 9.5C8.5 8.51667 8.8375 7.6875 9.5125 7.0125C10.1875 6.3375 11.0167 6 12 6C12.9833 6 13.8125 6.3375 14.4875 7.0125C15.1625 7.6875 15.5 8.51667 15.5 9.5C15.5 10.4833 15.1625 11.3125 14.4875 11.9875C13.8125 12.6625 12.9833 13 12 13ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C12.8833 20 13.7167 19.8708 14.5 19.6125C15.2833 19.3542 16 18.9833 16.65 18.5C16 18.0167 15.2833 17.6458 14.5 17.3875C13.7167 17.1292 12.8833 17 12 17C11.1167 17 10.2833 17.1292 9.5 17.3875C8.71667 17.6458 8 18.0167 7.35 18.5C8 18.9833 8.71667 19.3542 9.5 19.6125C10.2833 19.8708 11.1167 20 12 20ZM12 11C12.4333 11 12.7917 10.8583 13.075 10.575C13.3583 10.2917 13.5 9.93333 13.5 9.5C13.5 9.06667 13.3583 8.70833 13.075 8.425C12.7917 8.14167 12.4333 8 12 8C11.5667 8 11.2083 8.14167 10.925 8.425C10.6417 8.70833 10.5 9.06667 10.5 9.5C10.5 9.93333 10.6417 10.2917 10.925 10.575C11.2083 10.8583 11.5667 11 12 11Z"
+                      fill="#FAFDFE"
+                    />
+                  </g>
+                </svg>
+
+                <h1>ログイン</h1>
+              </div>
+
+              <div class="flex gap-x-2 items-center">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_171_3945"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="24"
+                    height="24"
+                  >
+                    <rect width="24" height="24" fill="#FAFDFE" />
+                  </mask>
+                  <g mask="url(#mask0_171_3945)">
+                    <path
+                      d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 11.8833 19.9958 11.7625 19.9875 11.6375C19.9792 11.5125 19.975 11.4083 19.975 11.325C19.8917 11.8083 19.6667 12.2083 19.3 12.525C18.9333 12.8417 18.5 13 18 13H16C15.45 13 14.9792 12.8042 14.5875 12.4125C14.1958 12.0208 14 11.55 14 11V10H10V8C10 7.45 10.1958 6.97917 10.5875 6.5875C10.9792 6.19583 11.45 6 12 6H13C13 5.61667 13.1042 5.27917 13.3125 4.9875C13.5208 4.69583 13.775 4.45833 14.075 4.275C13.7417 4.19167 13.4042 4.125 13.0625 4.075C12.7208 4.025 12.3667 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12H9C10.1 12 11.0417 12.3917 11.825 13.175C12.6083 13.9583 13 14.9 13 16V17H10V19.75C10.3333 19.8333 10.6625 19.8958 10.9875 19.9375C11.3125 19.9792 11.65 20 12 20Z"
+                      fill="#FAFDFE"
+                    />
+                  </g>
+                </svg>
+
+                <h1>日本語</h1>
+              </div>
+            </div>
+
+            <div class="flex gap-x-4">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.0222 0C4.37581 0 0 4.12682 0 9.7009C0 12.6164 1.19798 15.1359 3.14798 16.8763C3.48468 17.1791 3.41532 17.3545 3.47258 19.2244C3.47709 19.3553 3.51357 19.4832 3.57885 19.5969C3.64413 19.7105 3.73622 19.8064 3.84708 19.8763C3.95795 19.9462 4.08423 19.9879 4.2149 19.9977C4.34558 20.0076 4.47668 19.9853 4.59677 19.9329C6.73024 18.9933 6.75766 18.9191 7.11935 19.0175C13.3004 20.7188 20 16.763 20 9.7009C20 4.12682 15.669 0 10.0222 0ZM16.0399 7.4653L13.0964 12.1256C12.9852 12.3009 12.8391 12.4513 12.6671 12.5674C12.4951 12.6835 12.301 12.7628 12.0969 12.8004C11.8928 12.838 11.6832 12.8331 11.4811 12.7858C11.279 12.7386 11.0889 12.6502 10.9226 12.526L8.58064 10.7731C8.47595 10.6946 8.34861 10.6522 8.21774 10.6522C8.08687 10.6522 7.95953 10.6946 7.85484 10.7731L4.69476 13.17C4.27298 13.4898 3.72056 12.9845 4.00484 12.5381L6.94839 7.87782C7.0595 7.70253 7.20563 7.55209 7.37762 7.43594C7.54961 7.31979 7.74374 7.24042 7.94783 7.20283C8.15193 7.16523 8.3616 7.17021 8.56368 7.21746C8.76576 7.26471 8.9559 7.35321 9.12218 7.4774L11.4633 9.22991C11.568 9.30843 11.6953 9.35088 11.8262 9.35088C11.9571 9.35088 12.0844 9.30843 12.1891 9.22991L15.3508 6.83543C15.7718 6.51364 16.3242 7.0185 16.0399 7.4653Z"
+                  fill="white"
+                />
+              </svg>
+
+              <svg
+                width="19"
+                height="20"
+                viewBox="0 0 19 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.1542 2.90625C14.3772 1.03125 12.0107 0 9.49576 0C4.30469 0 0.0805804 4.44643 0.0805804 9.91071C0.0805804 11.6562 0.51317 13.3616 1.33594 14.8661L0 20L4.99174 18.6205C6.36585 19.4107 7.91384 19.8259 9.49152 19.8259H9.49576C14.6826 19.8259 19 15.3795 19 9.91518C19 7.26786 17.9312 4.78125 16.1542 2.90625ZM9.49576 18.1563C8.08772 18.1563 6.70937 17.7589 5.50915 17.0089L5.225 16.8304L2.26473 17.6473L3.05357 14.6071L2.86696 14.2946C2.08237 12.9821 1.67098 11.4688 1.67098 9.91071C1.67098 5.37054 5.18259 1.67411 9.5 1.67411C11.5908 1.67411 13.5545 2.53125 15.0304 4.08929C16.5062 5.64732 17.4138 7.71429 17.4096 9.91518C17.4096 14.4598 13.8089 18.1563 9.49576 18.1563ZM13.7877 11.9866C13.5545 11.8616 12.3967 11.2634 12.1804 11.183C11.9641 11.0982 11.8071 11.058 11.6502 11.308C11.4933 11.558 11.0437 12.1116 10.9038 12.2813C10.7681 12.4464 10.6281 12.4688 10.3949 12.3438C9.01228 11.6161 8.10469 11.0446 7.19286 9.39732C6.95112 8.95982 7.4346 8.99107 7.88415 8.04464C7.96049 7.87946 7.92232 7.73661 7.86295 7.61161C7.80357 7.48661 7.33281 6.26786 7.13772 5.77232C6.94688 5.29018 6.75179 5.35714 6.60759 5.34821C6.47187 5.33929 6.31495 5.33929 6.15804 5.33929C6.00112 5.33929 5.74665 5.40179 5.53036 5.64732C5.31406 5.89732 4.70759 6.49554 4.70759 7.71429C4.70759 8.93304 5.55156 10.1116 5.66607 10.2768C5.78482 10.442 7.32433 12.942 9.68661 14.0179C11.1795 14.6964 11.7647 14.7545 12.5112 14.6384C12.965 14.567 13.9022 14.0402 14.0973 13.4598C14.2924 12.8795 14.2924 12.3839 14.233 12.2813C14.1779 12.1696 14.021 12.1071 13.7877 11.9866Z"
+                  fill="white"
+                />
+              </svg>
+
+              <svg
+                width="21"
+                height="15"
+                viewBox="0 0 21 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.5612 2.34699C20.3197 1.42316 19.6081 0.695586 18.7046 0.448672C17.0669 0 10.5 0 10.5 0C10.5 0 3.93315 0 2.29544 0.448672C1.39193 0.695625 0.680333 1.42316 0.438815 2.34699C0 4.02148 0 7.51516 0 7.51516C0 7.51516 0 11.0088 0.438815 12.6833C0.680333 13.6071 1.39193 14.3044 2.29544 14.5513C3.93315 15 10.5 15 10.5 15C10.5 15 17.0668 15 18.7046 14.5513C19.6081 14.3044 20.3197 13.6071 20.5612 12.6833C21 11.0088 21 7.51516 21 7.51516C21 7.51516 21 4.02148 20.5612 2.34699ZM8.35226 10.6871V4.34316L13.8409 7.51523L8.35226 10.6871Z"
+                  fill="white"
+                />
+              </svg>
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 9.05477C18 4.05274 13.9718 0 9 0C4.02823 0 0 4.05274 0 9.05477C0 13.5741 3.29117 17.3202 7.59375 18V11.6723H5.30746V9.05477H7.59375V7.0598C7.59375 4.79063 8.93649 3.5372 10.9931 3.5372C11.978 3.5372 13.0079 3.71391 13.0079 3.71391V5.9411H11.8727C10.755 5.9411 10.4062 6.63919 10.4062 7.35517V9.05477H12.9023L12.5031 11.6723H10.4062V18C14.7088 17.3202 18 13.5741 18 9.05477Z"
+                  fill="white"
+                />
+              </svg>
+
+              <svg
+                width="21"
+                height="18"
+                viewBox="0 0 21 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.8414 4.48592C18.8548 4.68279 18.8548 4.87969 18.8548 5.07656C18.8548 11.0812 14.5242 18 6.60916 18C4.17069 18 1.90547 17.2547 0 15.961C0.34646 16.0031 0.67955 16.0172 1.03934 16.0172C3.05137 16.0172 4.90356 15.3 6.38263 14.0766C4.49049 14.0344 2.90482 12.7266 2.35849 10.9266C2.62501 10.9687 2.89149 10.9969 3.17134 10.9969C3.55775 10.9969 3.9442 10.9406 4.30395 10.8422C2.33187 10.4203 0.852759 8.59218 0.852759 6.38437V6.32814C1.42571 6.66564 2.09201 6.87657 2.79818 6.90467C1.63891 6.08902 0.879419 4.69685 0.879419 3.12184C0.879419 2.27811 1.09258 1.50467 1.4657 0.829666C3.58437 3.58591 6.76904 5.38588 10.3401 5.58279C10.2735 5.24529 10.2335 4.89376 10.2335 4.54219C10.2335 2.03904 12.1523 0 14.5374 0C15.7766 0 16.8959 0.548436 17.6821 1.43437C18.6548 1.23751 19.5875 0.857802 20.4137 0.337502C20.0939 1.39221 19.4143 2.27815 18.5216 2.84061C19.3877 2.74222 20.2272 2.48904 21 2.13752C20.4138 3.03748 19.6809 3.83901 18.8414 4.48592Z"
+                  fill="white"
+                />
+              </svg>
+
+              <svg
+                width="19"
+                height="18"
+                viewBox="0 0 19 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.50212 4.38503C6.8063 4.38503 4.63185 6.4455 4.63185 9C4.63185 11.5545 6.8063 13.615 9.50212 13.615C12.1979 13.615 14.3724 11.5545 14.3724 9C14.3724 6.4455 12.1979 4.38503 9.50212 4.38503ZM9.50212 12.0003C7.76001 12.0003 6.33581 10.6548 6.33581 9C6.33581 7.3452 7.75577 5.99967 9.50212 5.99967C11.2485 5.99967 12.6684 7.3452 12.6684 9C12.6684 10.6548 11.2442 12.0003 9.50212 12.0003ZM15.7076 4.19625C15.7076 4.79471 15.1989 5.27268 14.5716 5.27268C13.94 5.27268 13.4356 4.79069 13.4356 4.19625C13.4356 3.60181 13.9443 3.11983 14.5716 3.11983C15.1989 3.11983 15.7076 3.60181 15.7076 4.19625ZM18.9332 5.28874C18.8612 3.84681 18.5136 2.56956 17.3988 1.51724C16.2883 0.464911 14.9404 0.135557 13.4187 0.0632601C11.8504 -0.0210867 7.14964 -0.0210867 5.58132 0.0632601C4.06386 0.131541 2.71595 0.460895 1.60117 1.51322C0.486392 2.56555 0.143056 3.8428 0.0667596 5.28473C-0.0222532 6.77084 -0.0222532 11.2251 0.0667596 12.7113C0.138818 14.1532 0.486392 15.4304 1.60117 16.4828C2.71595 17.5351 4.05962 17.8644 5.58132 17.9367C7.14964 18.0211 11.8504 18.0211 13.4187 17.9367C14.9404 17.8685 16.2883 17.5391 17.3988 16.4828C18.5094 15.4304 18.8569 14.1532 18.9332 12.7113C19.0223 11.2251 19.0223 6.77485 18.9332 5.28874ZM16.9071 14.3058C16.5765 15.093 15.9365 15.6995 15.1015 16.0168C13.851 16.4868 10.8839 16.3783 9.50212 16.3783C8.1203 16.3783 5.14897 16.4828 3.90279 16.0168C3.072 15.7036 2.43196 15.0971 2.0971 14.3058C1.60117 13.1209 1.71562 10.3094 1.71562 9C1.71562 7.69062 1.60541 4.87504 2.0971 3.69419C2.42772 2.90695 3.06776 2.30046 3.90279 1.98315C5.15321 1.51322 8.1203 1.62167 9.50212 1.62167C10.8839 1.62167 13.8553 1.51724 15.1015 1.98315C15.9322 2.29644 16.5723 2.90293 16.9071 3.69419C17.4031 4.87906 17.2886 7.69062 17.2886 9C17.2886 10.3094 17.4031 13.125 16.9071 14.3058Z"
+                  fill="white"
+                />
+              </svg>
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 0C1.35503 0 0 1.35503 0 3V15C0 16.645 1.35503 18 3 18H15C16.645 18 18 16.645 18 15V3C18 1.35503 16.645 0 15 0H3ZM3 2H15C15.565 2 16 2.43497 16 3V15C16 15.565 15.565 16 15 16H3C2.43497 16 2 15.565 2 15V3C2 2.43497 2.43497 2 3 2ZM9 4V11C9 11.565 8.56503 12 8 12C7.43497 12 7 11.565 7 11C7 10.435 7.43497 10 8 10V8C6.35503 8 5 9.35503 5 11C5 12.645 6.35503 14 8 14C9.64497 14 11 12.645 11 11V7.23242C11.6161 7.67134 12.2591 8 13 8V6C12.9527 6 12.2627 5.78094 11.7812 5.36133C11.2998 4.94172 11 4.41499 11 4H9Z"
+                  fill="white"
                 />
               </svg>
             </div>
           </div>
         </div>
+
+        <hr class="opacity-50" />
+
+        <div class="flex justify-between items-center pt-10 pb-10">
+          <div class="flex gap-x-8 underline underline-offset-4">
+            <h1>利用規約</h1>
+
+            <h1>プライバシーポリシー</h1>
+          </div>
+
+          <h1 class="text-[14px] font-400">
+            © CAMTECH Inc. All Rights Reserved.
+          </h1>
+        </div>
       </div>
-    </main>
+    </footer>
   </body>
 </html>

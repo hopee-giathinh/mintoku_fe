@@ -5,9 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  box-sizing: border-box !important;
 }
 
 @layer utilities {
@@ -29,16 +27,16 @@
   --font-light: 400;
 }
 
-body {
-  height: 100vh !important;
-  width: 100vw !important;
-  overflow-x: hidden;
-  color: var(--blue-800) !important;
+html {
+  font-size: 1rem;
 }
 
-html {
+body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  color: #153c4a;
 }
 
 .font-700 {
