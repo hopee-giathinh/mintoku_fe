@@ -75,9 +75,9 @@
 
     <!-- MAIN BODY -->
     <main class="p-8 rounded-bl-[20px] rounded-br-[20px]">
-      <div class="flex gap-x-8">
+      <div class="xl:flex xl:w-full gap-x-8">
         <!-- MAIN -->
-        <div class="w-[calc(100%-310px)] h-full">
+        <div class="xl:w-[calc(100%-310px)] h-full">
           <!-- HEADER -->
           <header
             class="w-full py-10"
@@ -89,10 +89,13 @@
             "
           >
             <div style="z-index: 100" class="relative w-full">
-              <div class="flex items-center justify-between mt-2">
-                <div class="self-end leading-none z-100">
-                  <h1 class="text-[100px] font-semibold">làm việc</h1>
-                  <h1 class="text-[100px] font-semibold">ở nhật bản</h1>
+              <div
+                class="flex flex-col-reverse lg:flex-row items-center justify-between mt-2"
+              >
+                <div class="lg:self-end leading-none z-100">
+                  <h1 class="text-[100px] font-semibold mt-10">
+                    làm việc ở nhật bản
+                  </h1>
 
                   <p
                     class="text-2xl underline underline-offset-8 mt-5 font-bold"
@@ -109,28 +112,28 @@
                   />
 
                   <img
-                    class="absolute h-40 w-40 bottom-0 left-[-40px]"
+                    class="absolute h-25 lg:w-25 bottom-0 left-[-40px]"
                     src="/images/header/carousel_4.svg"
                     alt=""
                     style="z-index: 10"
                   />
 
                   <img
-                    class="absolute h-30 w-30 top-0 right-[-10px]"
+                    class="absolute h-25 w-25 top-0 right-[-10px]"
                     src="/images/header/carousel_5.svg"
                     alt=""
                     style="z-index: 10"
                   />
 
                   <img
-                    class="absolute h-30 w-30 bottom-0 right-[-15px]"
+                    class="absolute h-25 w-25 bottom-0 right-[-15px]"
                     src="/images/header/carousel_6.svg"
                     alt=""
                     style="z-index: 10"
                   />
 
                   <div
-                    class="absolute top-0 left-0 h-[420px] w-[400px] bg-[#e87903]"
+                    class="absolute top-0 left-0 h-full w-full bg-[#e87903]"
                     style="
                       border-radius: 37% 63% 69% 31% / 44% 70% 30% 56%;
                       z-index: 1;
@@ -138,7 +141,7 @@
                   ></div>
 
                   <div
-                    class="absolute top-0 left-0 h-[420px] w-[400px] bg-[#228cd1]"
+                    class="absolute top-0 left-0 h-full w-full bg-[#228cd1]"
                     style="
                       border-radius: 48% 52% 67% 33% / 42% 58% 42% 58%;
                       z-index: 1;
@@ -147,23 +150,23 @@
                 </div>
               </div>
 
-              <div class="flex items-center justify-between mt-10 gap-x-5">
+              <div class="lg:flex items-center justify-between mt-10 gap-x-5">
                 <div
                   class="flex-start text-left self-start w-full text-[18px] mt-5 font-400 text-second leading-[27px]"
                 >
                   <p>
                     Vietnamese consultants provide support for interview, visa
                     application, housing arrangement, and Japanese language
-                    training.
+                    training. No cost Japanese recruitment site for Vietnamese.
                   </p>
 
-                  <p>No cost Japanese recruitment site for Vietnamese.</p>
+                  <!-- <p>No cost Japanese recruitment site for Vietnamese.</p> -->
                 </div>
 
-                <div>
+                <div class="mt-5">
                   <div class="flex gap-x-4 relative">
                     <div
-                      class="min-w-[210px] text-second self-center text-center bg-white rounded-[10px] shadow-md hover:shadow-lg transition ease-in-out p-4 cursor-pointer"
+                      class="lg:min-w-[210px] w-full text-second self-center text-center bg-white rounded-[10px] shadow-md hover:shadow-lg transition ease-in-out p-4 cursor-pointer"
                     >
                       <div class="flex justify-center gap-x-1 text-[12px]">
                         <div>
@@ -182,7 +185,7 @@
                     </div>
 
                     <div
-                      class="min-w-[210px] text-second self-center text-center bg-white rounded-[10px] shadow-md hover:shadow-lg transition-all ease-in-out p-4 cursor-pointer"
+                      class="lg:min-w-[210px] w-full text-second self-center text-center bg-white rounded-[10px] shadow-md hover:shadow-lg transition-all ease-in-out p-4 cursor-pointer"
                     >
                       <div class="flex justify-center gap-x-1 text-[12px]">
                         <img src="/images/header/carousel_3.svg" alt="" />
@@ -194,7 +197,7 @@
                     </div>
 
                     <div
-                      class="min-w-[210px] w-full flex gap-x-2 text-second items-center text-start bg-white rounded-[10px] shadow-md hover:shadow-lg transition ease-in-out p-4 cursor-pointer"
+                      class="lg:min-w-[210px] w-full flex gap-x-2 text-second items-center text-start bg-white rounded-[10px] shadow-md hover:shadow-lg transition ease-in-out p-4 cursor-pointer"
                     >
                       <div>
                         <img
@@ -251,8 +254,10 @@
           </header>
 
           <!-- LEFT SIDEBAR -->
-          <div class="flex gap-x-10 mt-8">
-            <aside class="w-[220px]">
+          <div class="lg:flex gap-x-10 mt-8 relative">
+            <aside
+              class="hidden lg:block sticky h-[100svh] top-[10%] w-[220px]"
+            >
               <div class="flex p-1 rounded-md bg-[#F0F5F7]">
                 <button
                   class="w-[50%] bg-white rounded-md shadow-md text-primary font-700 p-2"
@@ -372,7 +377,7 @@
             </aside>
 
             <!-- CONTENT -->
-            <div class="w-[calc(100%-220px)]">
+            <div class="w-full lg:w-[calc(100%-220px)]">
               <div class="flex gap-x-6">
                 <button
                   class="text-primary font-700 px-6 py-2 border-2 border-transparent border-b-[#1EADE2]"
@@ -2631,9 +2636,7 @@
                   <p>他の方はこのような検索も試しています。</p>
                 </div>
                 <div class="flex flex-wrap -mx-2">
-                  <div
-                    class="w-full sm:w-1/2 md:w-1/3 p-2"
-                  >
+                  <div class="w-full sm:w-1/2 md:w-1/3 p-2">
                     <div
                       class="flex items-center gap-4 p-2 rounded-[10px] border-2 border-[#F0F5F7] hover:border-[#1EADE2] bg-white cursor-pointer"
                     >
@@ -2649,10 +2652,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="w-full sm:w-1/2 md:w-1/3 p-2"
-                >
-                  <div class="flex items-center gap-4 p-2 rounded-[10px] border-2 border-[#F0F5F7] hover:border-[#1EADE2] bg-white cursor-pointer"
-                  >
+                  <div class="w-full sm:w-1/2 md:w-1/3 p-2">
+                    <div
+                      class="flex items-center gap-4 p-2 rounded-[10px] border-2 border-[#F0F5F7] hover:border-[#1EADE2] bg-white cursor-pointer"
+                    >
                       <div class="w-[78px] h-[78px] rounded-[10px]">
                         <img
                           src="/images/banner/banner-search2.png"
@@ -2665,9 +2668,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="w-full sm:w-1/2 md:w-1/3 p-2"
-                  >
-                    <div class="flex items-center gap-4 p-2 rounded-[10px] border-2 border-[#F0F5F7] hover:border-[#1EADE2] bg-white cursor-pointer"
+                  <div class="w-full sm:w-1/2 md:w-1/3 p-2">
+                    <div
+                      class="flex items-center gap-4 p-2 rounded-[10px] border-2 border-[#F0F5F7] hover:border-[#1EADE2] bg-white cursor-pointer"
                     >
                       <div class="w-[78px] h-[78px] rounded-[10px]">
                         <img
@@ -2681,10 +2684,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="w-full sm:w-1/2 md:w-1/3 p-2"
-                >
-                  <div class="flex items-center gap-4 p-2 rounded-[10px] border-2 border-[#F0F5F7] hover:border-[#1EADE2] bg-white cursor-pointer"
-                  >
+                  <div class="w-full sm:w-1/2 md:w-1/3 p-2">
+                    <div
+                      class="flex items-center gap-4 p-2 rounded-[10px] border-2 border-[#F0F5F7] hover:border-[#1EADE2] bg-white cursor-pointer"
+                    >
                       <div class="w-[78px] h-[78px] rounded-[10px]">
                         <img
                           src="/images/banner/banner-search1.png"
@@ -2697,9 +2700,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="w-full sm:w-1/2 md:w-1/3 p-2"
-                  >
-                    <div class="flex items-center gap-4 p-2 rounded-[10px] border-2 border-[#F0F5F7] hover:border-[#1EADE2] bg-white cursor-pointer"
+                  <div class="w-full sm:w-1/2 md:w-1/3 p-2">
+                    <div
+                      class="flex items-center gap-4 p-2 rounded-[10px] border-2 border-[#F0F5F7] hover:border-[#1EADE2] bg-white cursor-pointer"
                     >
                       <div class="w-[78px] h-[78px] rounded-[10px]">
                         <img
@@ -2723,7 +2726,7 @@
         </div>
 
         <!-- RIGHT SIDEBAR -->
-        <div class="max-w-[310px]">
+        <div class="xl:max-w-[310px] md:mt-10">
           <div>
             <div class="bg-[#322E65] rounded-[10px] p-10 mb-10">
               <div>
@@ -3661,9 +3664,9 @@
         background-size: cover;
       "
     >
-      <div class="px-[230px]">
+      <div class="lg:px-[200px]">
         <div
-          class="flex justify-between items-start text-start leading-[30px] pt-20 pb-20"
+          class="flex flex-col gap-y-6 justify-between items-start text-start leading-[30px] pt-20 pb-20"
         >
           <div>
             <h1 class="text-xl mb-4 font-700">求人情報</h1>
@@ -3706,7 +3709,9 @@
         <hr class="opacity-50" />
 
         <div class="text-start leading-[30px] pt-20 pb-10">
-          <div class="flex gap-x-20 items-center mb-12">
+          <div
+            class="flex flex-col lg:flex-row gap-x-20 items-start lg:items-center mb-12"
+          >
             <img src="/images/footer/mintoku_work.png" />
 
             <h1 class="text-[14px]">
@@ -3715,7 +3720,9 @@
             </h1>
           </div>
 
-          <div class="flex justify-between items-center">
+          <div
+            class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-y-5"
+          >
             <div class="flex text-[14px] gap-x-6 items-center">
               <div class="flex gap-x-2 items-center">
                 <svg
@@ -3778,7 +3785,7 @@
               </div>
             </div>
 
-            <div class="flex gap-x-4">
+            <div class="flex gap-x-4 self-center">
               <svg
                 width="20"
                 height="20"
@@ -3875,7 +3882,9 @@
 
         <hr class="opacity-50" />
 
-        <div class="flex justify-between items-center pt-10 pb-10">
+        <div
+          class="flex flex-col lg:flex-row gap-y-10 justify-between items-start lg:items-center pt-10 pb-10"
+        >
           <div class="flex gap-x-8 underline underline-offset-4">
             <h1>利用規約</h1>
 
@@ -3887,20 +3896,52 @@
           </h1>
         </div>
       </div>
-       <!-- CONTACT -->
-       <div style="background-image: linear-gradient(90.9deg, #EF7A02 0.38%, #1EADE2 99.23%)" class="max-w-[288px] absolute p-[2px] rounded-[10px] right-3 bottom-10">
-        <div class="relative max-w-[288px] cursor-pointer pl-[18px] pr-4 py-3 flex items-center gap-3 bg-white rounded-[10px] hover:opacity-85">
-          <p class="flex-1 text-[15px] font-bold text-black text-start leading-[16.87px]">Xin vui lòng hỏi chúng tôi bất cứ điều gì về Nhật Bản.</p>
+
+      <!-- CONTACT -->
+      <div
+        style="
+          background-image: linear-gradient(
+            90.9deg,
+            #ef7a02 0.38%,
+            #1eade2 99.23%
+          );
+        "
+        class="max-w-[288px] absolute p-[2px] rounded-[10px] right-3 bottom-10"
+      >
+        <div
+          class="relative max-w-[288px] cursor-pointer pl-[18px] pr-4 py-3 flex items-center gap-3 bg-white rounded-[10px] hover:opacity-85"
+        >
+          <p
+            class="flex-1 text-[15px] font-bold text-black text-start leading-[16.87px]"
+          >
+            Xin vui lòng hỏi chúng tôi bất cứ điều gì về Nhật Bản.
+          </p>
           <div class="flex gap-[14px] rounded-[5px] w-fit">
-            <div class="bg-white rounded-full flex justify-center items-center cursor-pointer hover:opacity-85">
-              <img  class="w-[34px] h-[34px]" src="/images/job-detail/messenger-icon.svg" alt="messenger">
+            <div
+              class="bg-white rounded-full flex justify-center items-center cursor-pointer hover:opacity-85"
+            >
+              <img
+                class="w-[34px] h-[34px]"
+                src="/images/job-detail/messenger-icon.svg"
+                alt="messenger"
+              />
             </div>
-            <div class="bg-white rounded-full flex justify-center items-center cursor-pointer hover:opacity-85">
-              <img  class="w-[34px] h-[34px]" src="/images/job-detail/chat-icon.svg" alt="chat">
+            <div
+              class="bg-white rounded-full flex justify-center items-center cursor-pointer hover:opacity-85"
+            >
+              <img
+                class="w-[34px] h-[34px]"
+                src="/images/job-detail/chat-icon.svg"
+                alt="chat"
+              />
             </div>
           </div>
         </div>
-        <img class="absolute -top-12 right-4" src="/images/footer/contact-icon.svg" alt="person">
+        <img
+          class="absolute -top-12 right-4"
+          src="/images/footer/contact-icon.svg"
+          alt="person"
+        />
       </div>
     </footer>
   </body>
