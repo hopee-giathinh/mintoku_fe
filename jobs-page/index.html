@@ -359,28 +359,44 @@
                 </div>
                 <!-- CAROUSEL -->
                 <div class="pt-7 pb-8 flex flex-col gap-5">
-                  <div class="flex gap-2">
-                    <div class="flex-1 max-w[460px]">
-                      <img class="w-full h-full object-cover rounded-[10px]" src="/images/banner/top-banner.svg" alt="top banner">
-                    </div>
-                    <div class="flex flex-col gap-[6px]">
-                      <div class="h-[50%] flex items-start">
-                        <img class="w-full h-[calc(100%-3px)] rounded-[10px]" src="/images/banner/mini-banner.svg" alt="top banner">
+                  <div>
+                      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                          <!-- Carousel wrapper -->
+                          <div class="relative overflow-hidden rounded-lg">
+                              <!-- Item 1 -->
+                              <div class="duration-700 ease-in-out" data-carousel-item>
+                                  <img class="object-fit w-full min-h-[270px]" src="/images/carousel.svg" class="absolute block w-full h-[269px]" alt="carousel">
+                              </div>
+                              <!-- Item 2 -->
+                              <div class="duration-700 ease-in-out" data-carousel-item>
+                              </div>
+                          </div>
+                          <!-- Slider controls -->
+                          <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full -ml-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                              <span class="rotate-180 inline-flex items-center justify-center w-9 h-9 rounded-full bg-white border border-[#E5EFF3] hover:opacity-85">
+                                  <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M0.166992 8.57008L4.28755 5.00008L0.166993 1.43008L1.43555 0.333415L6.83366 5.00008L1.43555 9.66675L0.166992 8.57008Z" fill="#153C4A"/>
+                                  </svg> 
+                                  <span class="sr-only">Previous</span>
+                              </span>
+                          </button>
+                          <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full -mr-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                              <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white border border-[#E5EFF3] hover:opacity-85">
+                                  <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M0.166992 8.57008L4.28755 5.00008L0.166993 1.43008L1.43555 0.333415L6.83366 5.00008L1.43555 9.66675L0.166992 8.57008Z" fill="#153C4A"/>
+                                  </svg>                                    
+                                  <span class="sr-only">Next</span>
+                              </span>
+                          </button>
+                          <div style="background-image: linear-gradient(267.17deg, #FFFFFF 12.99%, rgba(255, 255, 255, 0.65) 47.67%, rgba(255, 255, 255, 0) 97.71%);" class="absolute top-0 end-0 w-20 h-[269px]"></div>
                       </div>
-                      <div class="h-[50%] flex items-end">
-                        <img class="w-full h-[calc(100%-3px)] rounded-[10px]" src="/images/banner/mini-banner.svg" alt="top banner">
-                      </div>
-                    </div>
                   </div>
-                  <p class="text-lg -ml-3">
-                    【技人国の求人
-                    翻訳】いろいろな国の方が大活躍！ゲームが大好きな方に人気の仕事！
-                  </p>
+                  <p class="text-lg -ml-3">【技人国の求人 翻訳】いろいろな国の方が大活躍！ゲームが大好きな方に人気の仕事！</p>
                 </div>
               </div>
               <!-- TAB LIST -->
               <div class="sticky top-0 z-40">
-                <div class="px-[78px] flex flex-col bg-white z-30">
+                <div class="px-4 lg:px-[78px] flex flex-col bg-white z-30">
                   <div class="mt-1 mb-2 flex justify-between gap-2 items-center">
                     <div class="flex gap-1 items-center">
                       <div class="flex flex-col gap-1">
@@ -2111,158 +2127,62 @@
                     >
                       この職場に関する体験談 (2)
                     </div>
-                    <div class="flex flex-col gap-1">
-                      <div class="flex flex-wrap">
-                        <div class="w-full md:w-1/2 pr-[10px] pb-5">
-                          <div class="flex flex-col gap-1 bg-white cursor-pointer pl-[18px] pr-5 py-4 border rounded-[10px] shadow-box"> 
-                            <p class="text-[13px] text-[#7599A6]">給料について</p>
-                            <p class="text-[15px] font-bold ellipsis">かなり田舎だけどとても綺麗で個人的には気に入っている。コンビニがないのが残念</p>
-                            <div class="flex justify-end">
-                              <div class="flex items-center gap-2">
-                                <p class="text-[13px] text-[#7599A6]">K.Tさん</p>
-                                <div class="relative rounded-full">
-                                  <img
-                                    class=" w-7 h-7"
-                                    src="/images/job-detail/user-avt2.svg"
-                                    alt="avatar"
-                                  />
-                                </div>
-                              </div>
+                    <div class="flex flex-col gap-4">
+                      <div class="flex flex-col gap-5">
+                        <div class="flex justify-between gap-[14px]">
+                          <div class="relative w-[65px] h-[65px] rounded-full">
+                            <img src="/images/job-detail/user-avt3.svg" alt="avatar">
+                            <img class="absolute -bottom-[2px] right-0 w-7 h-7 rounded-full" src="/images/job-detail/flag-avt2.svg" alt="flag avatar">
+                          </div>
+                          <div class="flex-1 pr-[18px] pl-6 py-4 flex flex-col gap-2 bg-white shadow-box border border-[#F1F6F8] rounded-[10px]">
+                            <p class="font-bold">かなり田舎だけどとても綺麗で個人的には気に入っている。コンビニがないのが残念だけどスーパーは比較的近くにある...</p>
+                            <div class="flex justify-between items-center gap-2">
+                              <p class="text-[#7599A6] text-[13px]">給料について</p>
+                              <p class="text-[#7599A6] text-[13px]">K.Tさん</p>
                             </div>
                           </div>
                         </div>
-                        <div class="w-full md:w-1/2 pl-[10px] pb-5">
-                          <div class="flex flex-col gap-1 bg-white cursor-pointer pl-[18px] pr-5 py-4 border rounded-[10px] shadow-box"> 
-                            <p class="text-[13px] text-[#7599A6]">給料について</p>
-                            <p class="text-[15px] font-bold ellipsis">かなり田舎だけどとても綺麗で個人的には気に入っている。コンビニがないのが残念</p>
-                            <div class="flex justify-end">
-                              <div class="flex items-center gap-2">
-                                <p class="text-[13px] text-[#7599A6]">K.Tさん</p>
-                                <div class="relative rounded-full">
-                                  <img
-                                    class=" w-7 h-7"
-                                    src="/images/job-detail/user-avt2.svg"
-                                    alt="avatar"
-                                  />
-                                </div>
-                              </div>
+                        <div class="flex justify-between gap-[14px]">
+                          <div class="relative w-[65px] h-[65px] rounded-full">
+                            <img src="/images/job-detail/user-avt4.svg" alt="avatar">
+                            <img class="absolute -bottom-[2px] right-0 w-7 h-7 rounded-full" src="/images/job-detail/flag-avt2.svg" alt="flag avatar">
+                          </div>
+                          <div class="flex-1 pr-[18px] pl-6 py-4 flex flex-col gap-2 bg-white shadow-box border border-[#F1F6F8] rounded-[10px]">
+                            <p class="font-bold">かなり田舎だけどとても綺麗で個人的には気に入っている。コンビニがないのが残念だけどスーパーは比較的近くにある...</p>
+                            <div class="flex justify-between items-center gap-2">
+                              <p class="text-[#7599A6] text-[13px]">給料について</p>
+                              <p class="text-[#7599A6] text-[13px]">K.Tさん</p>
                             </div>
                           </div>
                         </div>
-                        <div class="w-full md:w-1/2 pr-[10px] pb-5">
-                          <div class="flex flex-col gap-1 bg-white cursor-pointer pl-[18px] pr-5 py-4 border rounded-[10px] shadow-box"> 
-                            <p class="text-[13px] text-[#7599A6]">給料について</p>
-                            <p class="text-[15px] font-bold ellipsis">かなり田舎だけどとても綺麗で個人的には気に入っている。コンビニがないのが残念</p>
-                            <div class="flex justify-end">
-                              <div class="flex items-center gap-2">
-                                <p class="text-[13px] text-[#7599A6]">K.Tさん</p>
-                                <div class="relative rounded-full">
-                                  <img
-                                    class=" w-7 h-7"
-                                    src="/images/job-detail/user-avt2.svg"
-                                    alt="avatar"
-                                  />
-                                </div>
-                              </div>
+                        <div class="flex justify-between gap-[14px]">
+                          <div class="relative w-[65px] h-[65px] rounded-full">
+                            <img src="/images/job-detail/user-avt4.svg" alt="avatar">
+                            <img class="absolute -bottom-[2px] right-0 w-7 h-7 rounded-full" src="/images/job-detail/flag-avt2.svg" alt="flag avatar">
+                          </div>
+                          <div class="flex-1 pr-[18px] pl-6 py-4 flex flex-col gap-2 bg-white shadow-box border border-[#F1F6F8] rounded-[10px]">
+                            <p class="font-bold">かなり田舎だけどとても綺麗で個人的には気に入っている。コンビニがないのが残念だけどスーパーは比較的近くにある...</p>
+                            <div class="flex justify-between items-center gap-2">
+                              <p class="text-[#7599A6] text-[13px]">給料について</p>
+                              <p class="text-[#7599A6] text-[13px]">K.Tさん</p>
                             </div>
                           </div>
                         </div>
-                        <div class="w-full md:w-1/2 pl-[10px] pb-5">
-                          <div class="flex flex-col gap-1 bg-white cursor-pointer pl-[18px] pr-5 py-4 border rounded-[10px] shadow-box"> 
-                            <p class="text-[13px] text-[#7599A6]">給料について</p>
-                            <p class="text-[15px] font-bold ellipsis">かなり田舎だけどとても綺麗で個人的には気に入っている。コンビニがないのが残念</p>
-                            <div class="flex justify-end">
-                              <div class="flex items-center gap-2">
-                                <p class="text-[13px] text-[#7599A6]">K.Tさん</p>
-                                <div class="relative rounded-full">
-                                  <img
-                                    class=" w-7 h-7"
-                                    src="/images/job-detail/user-avt2.svg"
-                                    alt="avatar"
-                                  />
-                                </div>
-                              </div>
-                            </div>
+                        <div class="flex justify-between gap-[14px]">
+                          <div class="relative w-[65px] h-[65px] rounded-full">
+                            <img src="/images/job-detail/user-avt3.svg" alt="avatar">
+                            <img class="absolute -bottom-[2px] right-0 w-7 h-7 rounded-full" src="/images/job-detail/flag-avt2.svg" alt="flag avatar">
                           </div>
-                        </div>
-                        <div class="w-full md:w-1/2 pr-[10px] pb-5">
-                          <div class="flex flex-col gap-1 bg-white cursor-pointer pl-[18px] pr-5 py-4 border rounded-[10px] shadow-box"> 
-                            <p class="text-[13px] text-[#7599A6]">給料について</p>
-                            <p class="text-[15px] font-bold ellipsis">かなり田舎だけどとても綺麗で個人的には気に入っている。コンビニがないのが残念</p>
-                            <div class="flex justify-end">
-                              <div class="flex items-center gap-2">
-                                <p class="text-[13px] text-[#7599A6]">K.Tさん</p>
-                                <div class="relative rounded-full">
-                                  <img
-                                    class=" w-7 h-7"
-                                    src="/images/job-detail/user-avt2.svg"
-                                    alt="avatar"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="w-full md:w-1/2 pl-[10px] pb-5">
-                          <div class="flex flex-col gap-1 bg-white cursor-pointer pl-[18px] pr-5 py-4 border rounded-[10px] shadow-box"> 
-                            <p class="text-[13px] text-[#7599A6]">給料について</p>
-                            <p class="text-[15px] font-bold ellipsis">かなり田舎だけどとても綺麗で個人的には気に入っている。コンビニがないのが残念</p>
-                            <div class="flex justify-end">
-                              <div class="flex items-center gap-2">
-                                <p class="text-[13px] text-[#7599A6]">K.Tさん</p>
-                                <div class="relative rounded-full">
-                                  <img
-                                    class=" w-7 h-7"
-                                    src="/images/job-detail/user-avt2.svg"
-                                    alt="avatar"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="w-full md:w-1/2 pr-[10px] pb-5">
-                          <div class="flex flex-col gap-1 bg-white cursor-pointer pl-[18px] pr-5 py-4 border rounded-[10px] shadow-box"> 
-                            <p class="text-[13px] text-[#7599A6]">給料について</p>
-                            <p class="text-[15px] font-bold ellipsis">かなり田舎だけどとても綺麗で個人的には気に入っている。コンビニがないのが残念</p>
-                            <div class="flex justify-end">
-                              <div class="flex items-center gap-2">
-                                <p class="text-[13px] text-[#7599A6]">K.Tさん</p>
-                                <div class="relative rounded-full">
-                                  <img
-                                    class=" w-7 h-7"
-                                    src="/images/job-detail/user-avt2.svg"
-                                    alt="avatar"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="w-full md:w-1/2 pl-[10px] pb-5">
-                          <div class="flex flex-col gap-1 bg-white cursor-pointer pl-[18px] pr-5 py-4 border rounded-[10px] shadow-box"> 
-                            <p class="text-[13px] text-[#7599A6]">給料について</p>
-                            <p class="text-[15px] font-bold ellipsis">かなり田舎だけどとても綺麗で個人的には気に入っている。コンビニがないのが残念</p>
-                            <div class="flex justify-end">
-                              <div class="flex items-center gap-2">
-                                <p class="text-[13px] text-[#7599A6]">K.Tさん</p>
-                                <div class="relative rounded-full">
-                                  <img
-                                    class=" w-7 h-7"
-                                    src="/images/job-detail/user-avt2.svg"
-                                    alt="avatar"
-                                  />
-                                </div>
-                              </div>
+                          <div class="flex-1 pr-[18px] pl-6 py-4 flex flex-col gap-2 bg-white shadow-box border border-[#F1F6F8] rounded-[10px]">
+                            <p class="font-bold">かなり田舎だけどとても綺麗で個人的には気に入っている。コンビニがないのが残念だけどスーパーは比較的近くにある...</p>
+                            <div class="flex justify-between items-center gap-2">
+                              <p class="text-[#7599A6] text-[13px]">給料について</p>
+                              <p class="text-[#7599A6] text-[13px]">K.Tさん</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <a
-                        class="text-lg text-[#7599A6] underline text-end"
-                        href="#"
-                        >体験談をもっと見る</a
-                      >
+                      <a class="text-lg text-[#7599A6] underline text-end" href="#">体験談をもっと見る</a>
                     </div>
                   </div>
                 </div>
@@ -2282,11 +2202,11 @@
                     <br />
                     mintokuサービスはすべて無料です。
                   </div>
-                  <!-- <img
+                  <img
                     class="absolute -right-24"
                     src="/images/job-detail/person6.svg"
                     alt="person"
-                  /> -->
+                  />
                 </div>
                 <div
                   class="relative px-7 pt-7 mt-6 bg-[#F0F5F7] rounded-[5px] border border-[#E5EFF3] flex flex-col"
